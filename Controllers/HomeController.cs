@@ -8,16 +8,29 @@ using System.Web.Mvc;
 
 namespace MobilityEye.Controllers
 {
-
+    /// <summary>  
+    /// The main class.
+    /// Contains all methods for this project.
+    /// </summary>  
+    /// <remarks>
+    ///<para>This class performs the form creation and data submission</para>
+    /// </remarks>
     public class HomeController : Controller
     {
-      
+        /// <summary>  
+        /// Displays home page for inputting json data
+        /// </summary> 
         public ActionResult Index()
         {
             return View();
         }
 
-        //Creating form from Json data
+        /// <summary>  
+        /// Creating form from Json data
+        /// </summary> 
+        /// <returns>
+        /// form view
+        /// </returns>
         [HttpPost]
         public ActionResult Form1(Models.InputModel im) 
         {
@@ -49,7 +62,12 @@ namespace MobilityEye.Controllers
             return View("form");
         }
 
-        //Saving data submitted to dynamic form
+        /// <summary>  
+        ///Saving data submitted to dynamic form
+        /// </summary>
+        /// <returns>
+        /// result view
+        /// </returns>
         [HttpPost]
         public ActionResult Form2(FormCollection form)  
         {
