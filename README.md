@@ -18,4 +18,4 @@ To run this project:
 * While submitting the form a dialog box is shown.
 * And it will show the submitted data.
 * Unit test is also included.
-* xml documentation is included at bin\MobilityEye.xml
+* xml documentation is included as doc.xml
