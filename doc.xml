@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MobilityEye</name>
+    </assembly>
+    <members>
+        <member name="T:MobilityEye.Controllers.HomeController">
+             <summary>  
+             The main class.
+             Contains all methods for this project.
+             </summary>  
+             <remarks>
+            <para>This class performs the form creation and data submission</para>
+             </remarks>
+        </member>
+        <member name="M:MobilityEye.Controllers.HomeController.Index">
+            <summary>  
+            Displays home page for inputting json data
+            </summary> 
+        </member>
+        <member name="M:MobilityEye.Controllers.HomeController.Form1(MobilityEye.Models.InputModel)">
+            <summary>  
+            Creating form from Json data
+            </summary> 
+            <returns>
+            form view
+            </returns>
+        </member>
+        <member name="M:MobilityEye.Controllers.HomeController.Form2(System.Web.Mvc.FormCollection)">
+             <summary>  
+            Saving data submitted to dynamic form
+             </summary>
+             <returns>
+             result view
+             </returns>
+        </member>
+    </members>
+</doc>
