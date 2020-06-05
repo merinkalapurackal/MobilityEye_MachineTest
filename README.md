@@ -2,7 +2,7 @@
 Machine Test for Mobility eye
 
 ## General Info
-This project is for creating dynamic form from an iput json data
+This project is for creating dynamic form from an input json data
 
 ## Technologies
 Project is created with:
