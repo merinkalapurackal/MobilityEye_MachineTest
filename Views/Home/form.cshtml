@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<link rel="stylesheet" href="Style.css" />
+<hr />
+@using (Html.BeginForm("Form2", "Home", FormMethod.Post))
+{
+    <div class="container" align="center">
+        <div class="formdiv">
+            @Html.Raw(ViewBag.HtmlStr)
+
+            <br />
+            <div style="text-align:center;">
+                <input id="save" type="submit" value="SAVE" style="color:white;background-color:black;" />
+            </div>
+            <br /><br />
+        </div>
+
+    </div>
+}
+<script type="text/javascript">
+    function method1(textbox) {
+        ViewBag.text = textbox.value;
+    }
+</script>

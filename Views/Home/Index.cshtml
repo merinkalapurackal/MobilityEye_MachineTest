@@ -1,0 +1,23 @@
+﻿@model MobilityEye.Models.InputModel
+
+<hr />
+@using (Html.BeginForm("Form1", "Home", FormMethod.Post))
+{
+    <div class="container">
+        <div class="textwrapper">
+            @Html.TextAreaFor(m => m.Inputjson, 10, 40, htmlAttributes: new { style = "width: 100%; max-width: 100%; height:500px;", placeholder = "Input the JSON representation of the form" })
+        </div>
+        <br />
+        <div style="text-align:center;">
+
+            <input id="textarea1" type="submit" value="GENERATE" style="color:white;background-color:black;" />
+        </div>
+    </div>
+}
+<style>
+
+    .text {
+        width: 100%;
+        color: red;
+    }
+</style>

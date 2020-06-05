@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<hr />
+
+@Html.Raw(TempData["alertMessage"])
+
+<div class="container" align="center">
+    <div class="formdiv" >
+    <br />
+    <h2 align="center">Submitted Data</h2>
+        @Html.Raw(ViewBag.Resulthtml)
+        </div></div>
+        @*@if (TempData["text"] != null)
+            {
+                <label>Total Students:</label>TempData["text"].ToString();
+            }*@
+        <br />
+
+
