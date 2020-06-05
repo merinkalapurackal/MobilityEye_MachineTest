@@ -16,6 +16,9 @@ To run this project:
 * Give json as same format given in the example.
 * Click Gennerate button it will create a form
 * While submitting the form a dialog box is shown.
-* And it will show the submitted data.
+
+**Improvement Done
+* After submitting it will show the submitted data.
 * Unit test is also included.
 * xml documentation is included as doc.xml
+* version Control Added
